@@ -1,0 +1,1019 @@
+---------------------------------------------------------------
+
+[2023-02-10T22:31:31+08:00] 3.90.154.17 GET en.coyotebio.com/
+[运行时间：0.082419s] [吞吐率：12.13req/s] [内存消耗：5,249.84kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'en.coyotebio.com',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'accept-language' => 'en',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.004285s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000415s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000301s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002926s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000333s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000290s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002854s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000370s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000316s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002800s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000311s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000296s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000282s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002769s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000328s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002882s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002866s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002819s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002800s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000294s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+---------------------------------------------------------------
+
+[2023-02-10T22:36:07+08:00] 51.222.253.20 GET en.coyotebio.com/news_details/id/40.html
+[运行时间：0.071930s] [吞吐率：13.90req/s] [内存消耗：5,113.43kb] [文件加载：174]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'deflate, gzip, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '40',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/news_details.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'cate',
+  4 => 'seo',
+  5 => 'news',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003822s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000395s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000307s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000330s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000322s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002893s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000372s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000317s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002825s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000357s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000308s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002821s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000328s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002833s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 707 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002799s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_information` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 37 [ RunTime:0.000300s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+---------------------------------------------------------------
+
+[2023-02-10T22:39:36+08:00] 34.232.78.148 GET en.coyotebio.com/
+[运行时间：0.083095s] [吞吐率：12.03req/s] [内存消耗：5,249.88kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'en.coyotebio.com',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'accept-language' => 'en',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003801s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000440s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000311s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002919s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000307s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000292s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002882s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000390s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000345s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002840s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000331s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000282s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000305s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002853s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000361s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002831s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002790s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002781s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002766s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000290s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+---------------------------------------------------------------
+
+[2023-02-10T22:42:41+08:00] 31.6.73.2 GET en.coyotebio.com/
+[运行时间：0.083513s] [吞吐率：11.97req/s] [内存消耗：5,252.13kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'en-GB,en-US;q=0.9,en;q=0.8,de;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.google.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'cross-site',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000407s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000316s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000298s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002971s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000307s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000315s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002885s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000407s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000311s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002841s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000335s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002817s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000326s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002847s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002800s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002784s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002757s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000307s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+---------------------------------------------------------------
+
+[2023-02-10T22:47:12+08:00] 103.5.135.46 GET en.coyotebio.com/
+[运行时间：0.088203s] [吞吐率：11.34req/s] [内存消耗：5,252.16kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'en-US,en;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.google.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'cross-site',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003674s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000406s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000331s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000316s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002915s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000324s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000309s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002955s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000372s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000309s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002803s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000335s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000292s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002796s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000325s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002932s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002884s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002855s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.003076s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000411s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+---------------------------------------------------------------
+
+[2023-02-10T22:52:46+08:00] 157.55.39.136 GET en.coyotebio.com/reagent.html
+[运行时间：0.072965s] [吞吐率：13.71req/s] [内存消耗：5,231.66kb] [文件加载：176]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003649s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000413s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000297s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002911s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000313s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000314s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002923s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000377s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000332s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002833s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000338s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002793s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000344s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002874s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.002855s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000281s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/bcc738bfdb5f0e7319d68bed8d023890.php:50]
+---------------------------------------------------------------
+
+[2023-02-10T23:00:23+08:00] 66.249.72.229 GET kyden.web.zhongwangyingtong.com/search.html
+[运行时间：0.065956s] [吞吐率：15.16req/s] [内存消耗：5,087.66kb] [文件加载：173]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.101 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/signed-exchange;v=b3,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'amp-cache-transform' => 'google;v="1..8"',
+  'host' => 'kyden.web.zhongwangyingtong.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/search.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'cate',
+  4 => 'key_word',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003646s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000429s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000334s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000292s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002906s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000339s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000311s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002883s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000379s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000313s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002823s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000335s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000332s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002769s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000317s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`description` FROM `yzn_category` WHERE  `id` = 59 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002821s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 785 [ RunTime:0.000357s ]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义数组索引: search[/www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/controller/Common.php:64]
+[ error ] [8]未定义变量: seo[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:6]
+[ error ] [8]未定义变量: seo[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:7]
+[ error ] [8]未定义变量: seo[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:8]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:50]
+[ error ] [8]未定义变量: list[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:112]
+[ error ] [8]未定义变量: list[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:112]
+[ error ] [8]未定义变量: list[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/8d751fa036150001219cfcabd90b9dd3.php:112]
+---------------------------------------------------------------
+
+[2023-02-10T23:34:16+08:00] 13.51.74.36 GET en.coyotebio.com/
+[运行时间：0.081745s] [吞吐率：12.23req/s] [内存消耗：5,252.08kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'it,en-US;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.google.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'cross-site',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003768s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000424s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000299s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000303s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002944s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000309s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002870s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000393s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000325s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002862s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000301s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000313s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002786s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000335s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002799s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002762s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002757s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002792s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000283s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+---------------------------------------------------------------
+
+[2023-02-10T23:34:27+08:00] 13.51.74.36 GET en.coyotebio.com/instrument_list.html
+[运行时间：0.069020s] [吞吐率：14.49req/s] [内存消耗：5,132.69kb] [文件加载：175]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_J1DGRNCQ6S=GS1.1.1676043257.1.0.1676043257.0.0.0; _ga=GA1.1.1714377403.1676043258',
+  'accept-language' => 'it,en-US;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://en.coyotebio.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/instrument.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.004062s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000419s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000327s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002896s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000319s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000316s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000425s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000313s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002775s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000305s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000276s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002801s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000332s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002812s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 640 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb`,`content` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (770,769,774) [ RunTime:0.000356s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/c1dd6fb6d15b2b9ba2b45bbf72b4ae1f.php:50]
+---------------------------------------------------------------
+
+[2023-02-10T23:36:38+08:00] 185.191.171.23 GET en.coyotebio.com/news_details/id/30.html
+[运行时间：0.069382s] [吞吐率：14.41req/s] [内存消耗：5,116.59kb] [文件加载：174]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'en.coyotebio.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '30',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/news_details.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'cate',
+  4 => 'seo',
+  5 => 'news',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003630s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000420s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000321s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002907s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000289s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002849s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000308s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000302s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002799s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000291s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002735s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000317s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002814s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 707 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002798s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_information` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 37 [ RunTime:0.000293s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:40]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:44]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/73f9ec88650c3e4002f78cf88147a37f.php:50]
+---------------------------------------------------------------
+
+[2023-02-10T23:54:52+08:00] 161.156.29.33 GET en.coyotebio.com/
+[运行时间：0.082696s] [吞吐率：12.09req/s] [内存消耗：5,249.73kb] [文件加载：180]
+[ info ] [ LANG ] /www/wwwroot/kyden.web.zhongwangyingtong.com/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'en.coyotebio.com',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (compatible; oBot/2.3.1; http://www.xforce-security.com/crawler/)',
+  'accept' => 'text/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kyden.web.zhongwangyingtong.com/application/index/view/index/index.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'index',
+  6 => 'cooperation',
+  7 => 'news',
+  8 => 'solution',
+  9 => 'instrument',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.003617s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000406s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000325s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.002922s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000284s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000302s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.002934s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000459s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 50 ORDER BY `listorder`,`id` [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.002804s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000322s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000282s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000303s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000284s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.002786s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002794s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 779 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.002780s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_index` WHERE  `catid` = 1  AND `status` = 1 ORDER BY `listorder` DESC LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 528 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 716 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.002746s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`linkurl`,`thumb` FROM `yzn_cooperation` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (529,530,531,532,533) [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.002785s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`resume` FROM `yzn_information` WHERE  `status` = 1 ORDER BY `listorder`,`id` DESC LIMIT 3 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (861,860,857) [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id`,`catid`,`title`,`thumb`,`inputtime`,`entitle`,`remark`,`banner`,`recommend`,`goods`,`encontent` FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (572,573,574) [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (594,595,596) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`index_img`,`remark` FROM `yzn_instrument` WHERE  `status` = 1  AND (  FIND_IN_SET(2,`flag`) ) ORDER BY `listorder`,`id` LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 624 [ RunTime:0.000282s ]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:39]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:43]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]
+[ error ] [8]未定义数组索引: sub[/www/wwwroot/kyden.web.zhongwangyingtong.com/runtime/temp/4428138dc9a1087ae3d06a24bd728314.php:49]

@@ -1,0 +1,35 @@
+{layout name="layout" /}
+		<div class="ny-banner color-495877 instrument-banner" style="background-image: url({$cate.imagepath});">
+			<div class="core">
+				<h3 class="font46 font-bold line-height-1em">{$cate.picname}</h3>
+				
+				<div class="ny-banner-text">
+					{$cate.description|raw}
+				</div>
+			</div>
+		</div>
+		
+		<div class="instrument-list">
+			<div class="core">
+				<div class="tit">
+					<div class="tit-cn">Product List</div>
+				</div>
+				
+				<div class="instrument-list-con">
+					{volist name="instrument" id="item"}
+					<div class="instrument-item">
+						<div class="instrument-item-img">
+							<img src="{$item.thumb_path}" alt="">
+						</div>
+						<div class="instrument-item-text">
+							<h3>{$item.title}</h3>
+							<p>{$item.content|raw}</p>
+							<a class="index-more" href="{:url('index/instrument_detail',['id'=>$item.id])}">
+								<span>DETAILS</span><em></em>
+							</a>
+						</div>
+					</div>
+					{/volist}
+				</div>
+			</div>
+		</div>

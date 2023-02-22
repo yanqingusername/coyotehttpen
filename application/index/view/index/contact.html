@@ -1,0 +1,439 @@
+{layout name="layout" /}
+
+		<div class="ny-banner color-495877 join-banner" style="background-image: url(__IMG_PATH__/contact/banner.png)">
+
+			<div class="core">
+
+				<h3 class="font46 font-bold line-height-1em">{$cate.picname}</h3>
+				<div class="ny-banner-text" style="white-space: pre;">{$cate.description}</div>
+			</div>
+
+		</div>
+
+		<div class="contact">
+
+			<div class="core">
+
+					<form id="sendform">
+
+				<div class="contact-form">
+
+					<h3>General and Sales Enquiries</h3>
+
+					<h4>Please feel free to contact us if you want to know more about Coyote® FlashDetect™ System. Also We will revert back to you within 24 hours once we receive any concerns or questions.</h4>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> First Name
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="first_name" value="" required />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Last Name
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="last_name" value="" required />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Job Title
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="job_title" value="" required />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							Phone
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="phone" value="" />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Email
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="email" value="" required />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Company or Institution
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="company" value="" required />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Location
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<select name="location" required >
+
+								<option value ="">Please Select Country</option>
+
+								{volist name="country" id="item"}
+
+									<option value ="{$item}">{$item}</option>
+
+								{/volist}
+
+							</select>
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							Website
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<input type="text" name="website" value="" />
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Comment
+
+						</div>
+
+						<div class="form-cell-right">
+
+							<textarea name="comment" required></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left">
+
+							<span>*</span> Distributorship
+
+						</div>
+
+						<div class="form-cell-right" style="display: flex; flex-wrap: wrap; align-items: center;">
+
+							<div class="radio-item">
+
+								<input class="radio_type" required type="radio" name="ship" value="yes"><span>Yes</span>
+
+							</div>
+
+							<div class="radio-item">
+
+								<input class="radio_type" required type="radio" name="ship" value="no"><span>No</span>
+
+							</div>
+
+							<div class="radio-item">
+
+								<input class="radio_type" required type="radio" name="ship" value="other"><span>Other</span>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left"></div>
+
+						<div class="form-cell-right agree">
+
+							<input class="radio_type" type="checkbox" id="agree1" />
+
+							<p>
+
+								I acknowledge that I have read and understand Coyote Biosci-ence's <span class="tod">privacy policy</span> before submitting.
+
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="form-cell">
+
+						<div class="form-cell-left"></div>
+
+						<div class="form-cell-right">
+
+							<button class="contact-form-sub" type="submit">Submit</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				</form>
+
+				<!-- <div class="tit">
+					<div class="tit-cn">Contact Information</div>
+				</div> -->
+
+				
+
+				<div class="contact-main wow bounceInUp" style="background-image: url(__IMG_PATH__/contact/earth.png);">
+
+					<div class="global-distribution">
+
+						<div class="distribution-con" style="font-size: 24px">
+
+							By the end of 2021, Coyote has entered five continents and 64 countries and regions
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<!-- <div class="wow bounceInUp">
+
+					{$content|raw}
+
+				</div> -->
+
+			
+
+				<div class="contact-list">
+
+					{volist name="mycompany" id="item"}
+
+						{volist name="item" id="it"}
+
+						<div class="contact-item wow bounceInUp">
+
+							<h3>{$it.title}</h3>
+
+							<p>{$it.address}</p>
+
+						</div>
+
+						{/volist}
+
+					{/volist}
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="contact-mask">
+
+			<div class="contact-mask-box">
+
+				<div class="contact-mask-top">
+
+					<i></i>
+
+					<p>Privacy Policy</p>
+
+				</div>
+
+				
+
+				<div class="contact-mask-con">
+
+					<div class="contact-mask-text">
+
+						{$policy|raw}
+
+					</div>
+
+				</div>
+
+				
+
+				<div class="contact-mask-bottom">
+
+					<div class="agree">
+
+						<input class="radio_type" type="checkbox" id="agree2" />
+
+						<p>
+
+							I acknowledge that I have read and understand Coyote Bioscience's <span>Privacy Policy</span> before submitting.<br>
+
+							I agree and allow Coyote Bioscience to use and store my personal data in order to contact me to receive informa-tion on products, services, newsletters, surveys or upcoming events in the future.
+
+						</p>
+
+					</div>
+
+					<div class="contact-mask-btn">
+
+						<button class="agree-btn" type="button">I Agree</button>
+
+						<button class="close-btn" type="button">Close</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+<script>
+
+$(".tod").click(function(){
+
+	$(".contact-mask").show()
+
+})
+
+$(".close-btn").click(function(){
+
+	$(".contact-mask").hide()
+
+})
+
+$(".agree-btn").click(function(){
+
+	if(!$('#agree2').prop('checked')){
+
+		alert("请先勾选同意协议")
+
+		return false; 
+
+	} else {
+
+		$('#agree1').prop('checked',true)
+
+		$(".contact-mask").hide()
+
+	}
+
+})
+
+$(document).ready(function() {
+
+	$('#sendform').submit(function() {
+
+		if(!$('#agree1').prop('checked')){
+
+	 		alert("请先勾选同意协议")
+
+			return false; 
+
+		}
+
+		
+
+  		$.ajax({
+
+            type: "POST",
+
+            dataType: "json",
+
+            url: "{:url('index/add_contact')}" ,
+
+            data: $('#sendform').serialize(),
+
+            success: function (result) {
+
+                alert(result.msg)
+
+            },
+
+            error : function() {
+
+                alert("异常！");
+
+            }
+
+        });
+
+	  	return false; 
+
+	});
+
+});
+
+
+
+</script>

@@ -1,0 +1,72 @@
+{layout name="layout" /}
+		<div class="ny-banner color-495877 join-banner" style="background-image: url({$cate.imagepath})">
+			<div class="core">
+				<h3 class="font46 font-bold line-height-1em">{$cate.picname}</h3>
+				<div class="banner-text">{$cate.description}</div>
+			</div>
+		</div>
+
+
+
+		<div class="join1 wow bounceInUp">
+			<div class="core">
+				<div class="index1-text2">
+					<span>{$joinus.title}</span>
+				</div>
+
+				<a class="join1-main" href="https://cn.linkedin.com/company/coyote-bioscience?trk=public_profile_experience-item_profile-section-card_image-click">
+					<div class="join1-item" style="background-image: url({$joinus.image1_path});width: 100%"></div>
+				</a>
+			</div>
+		</div> 
+
+		<div class="join3 pageBg wow bounceInUp">
+			<div class="core">
+				<div class="index1-text2">
+					<span>{$joinus.title2}</span>
+				</div>
+				
+				<div class="join3-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							{volist name="join_data" id="item"}
+							<div class="swiper-slide">
+								<div class="join3-box">
+									<h3>{$item.title}</h3>
+									<div class="join3-text">
+										<div class="join3-p1">
+											<p>{$item.content1}</p>
+											<p>{$item.content2}</p>
+										</div>
+										<div class="join3-p2">
+											{$item.content3}
+										</div>
+									</div>
+									<!-- <div class="join3-ren" style="background-image: url({$item.path});"></div> -->
+								</div>
+							</div>
+							{/volist}
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+ 
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.join3-swiper .swiper-container', {
+				loop: true,
+				// autoplay: {
+				// 	delay: 2500,
+				// 	disableOnInteraction: false,
+				// },
+				navigation: {
+					nextEl: '.join3-swiper .swiper-button-next',
+					prevEl: '.join3-swiper .swiper-button-prev',
+				},
+			});
+		</script>
+
+ 

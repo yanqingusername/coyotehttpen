@@ -1,0 +1,5 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:22:{s:2:"id";i:54;s:7:"catname";s:25:"FlashDetect™ Mobile Lab";s:6:"catdir";s:23:"yidongfangcangshiyanshi";s:4:"type";i:1;s:7:"modelid";i:29;s:8:"parentid";i:51;s:11:"arrparentid";s:4:"0,51";s:10:"arrchildid";s:2:"54";s:5:"child";i:0;s:5:"image";s:61:"/uploads/images/20211011/cee09cbceef8f4e1f4e8ea15458263ec.png";s:11:"description";s:372:"All-in-one molecular diagnosis at Point of Care Testing (POCT) -Enabling truly 
+an on-site PCR solution with speedy, portability and operational user-friendly molecular testing that greatly enhances an effective large-scale implementation with obtainable goals of "early detection, early diagnosis, early treatment, and early isolation" in the front line of the epidemic.";s:3:"url";s:30:"/cms/index/instrument_lab.html";s:5:"items";i:1;s:7:"setting";a:4:{s:10:"meta_title";s:17:"Coyote Bioscience";s:13:"meta_keywords";s:0:"";s:16:"meta_description";s:0:"";s:13:"page_template";s:9:"page.html";}s:9:"listorder";i:100;s:6:"status";i:1;s:6:"imagem";i:0;s:8:"imageico";i:0;s:8:"imagecat";i:0;s:7:"picname";s:25:"FlashDetect™ Mobile Lab";s:10:"subpicname";s:0:"";s:13:"bottom_status";i:1;}
