@@ -34,7 +34,7 @@
 		<div class="reagent-detail-box1">
 			<h3>{$instrument.title}</h3>
 			<div class="reagent-detail-p">
-				<p>{$instrument.remark}</p>
+				<p>{$instrument.remark|raw}</p>
 			</div>
 			<h4>Highlights:</h4>
 			{volist name="instrument.tags" id="item"}
