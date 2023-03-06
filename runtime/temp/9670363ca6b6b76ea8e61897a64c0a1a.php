@@ -1,4 +1,4 @@
-<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_detail.html";i:1677057907;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
+<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_detail.html";i:1677838492;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -109,9 +109,9 @@
 
 		<div class="reagent-detail-box1">
 			<h3><?php echo htmlentities($reagentdata['title']); ?></h3>
-			<div class="reagent-detail-p">
+			<div class="reagent-detail-p-new">
 				<p>
-					<?php echo htmlentities($reagentdata['content']); ?>
+					<?php echo $reagentdata['content']; ?>
 				</p>
 			</div>
 			<h4>Highlights:</h4>

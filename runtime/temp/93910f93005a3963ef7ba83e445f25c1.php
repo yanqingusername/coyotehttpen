@@ -1,4 +1,4 @@
-<?php /*a:2:{s:87:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_detail.html";i:1677057907;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
+<?php /*a:2:{s:87:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_detail.html";i:1677838441;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -124,8 +124,8 @@
 
 		<div class="reagent-detail-box1">
 			<h3><?php echo htmlentities($instrument['title']); ?></h3>
-			<div class="reagent-detail-p">
-				<p><?php echo htmlentities($instrument['remark']); ?></p>
+			<div class="reagent-detail-p-new">
+				<p><?php echo $instrument['remark']; ?></p>
 			</div>
 			<h4>Highlights:</h4>
 			<?php if(is_array($instrument['tags']) || $instrument['tags'] instanceof \think\Collection || $instrument['tags'] instanceof \think\Paginator): $i = 0; $__LIST__ = $instrument['tags'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>

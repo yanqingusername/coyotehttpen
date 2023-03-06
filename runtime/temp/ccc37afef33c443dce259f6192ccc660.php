@@ -1,4 +1,4 @@
-<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_lab.html";i:1677724561;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
+<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_lab.html";i:1677821765;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -128,7 +128,6 @@
 					<h3><?php echo htmlentities($lab['title']); ?></h3>
 					<div class="reagent-detail-p">
 						<p><?php echo $lab['remark']; ?></p>
-						<!-- <pre style="white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;*word-wrap: break-word;*white-space : normal ;"><?php echo htmlentities($lab['remark']); ?></pre> -->
 					</div>
 
 					<h4>Highlights:</h4>
