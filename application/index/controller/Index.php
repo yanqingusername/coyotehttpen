@@ -408,4 +408,22 @@ class Index extends Common
       
         return view('search');
     }
+
+    public function fm1mixer()
+    {
+        // $cate = (new Category)->with(['image1']) ->field('id,catname,image,picname,subpicname,setting,description')->where('id',34)->find();
+        // $seo = unserialize($cate['setting']);
+        // unset($cate['setting']);
+        // $this->assign('seo',$seo);  
+        // $this->assign('cate',$cate); 
+
+        // //硬核科技
+        // $technology = (new Technology)->getInfo(); 
+        // //前沿科技
+        // $data1 = (new Technologydata)->getList(['catid'=>35]);
+        // //未来探索
+        // $data2 = (new Technologydata)->getList(['catid'=>36]);
+
+        return view('fm1mixer'); 
+    }
 }

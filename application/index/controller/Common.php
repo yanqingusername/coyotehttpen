@@ -93,6 +93,7 @@ class Common extends Controller
                 'instrument_detail'   => '51', 
                 'instrument_list'     => '51', 
                 'instrument_lab'      => '51', 
+                'fm1mixer'           => '62',
             );
     }
 }
