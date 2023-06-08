@@ -1,4 +1,4 @@
-<?php /*a:2:{s:78:"/Applications/phpstudy/coyotehttpen/application/index/view/index/fm1mixer.html";i:1686129694;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
+<?php /*a:2:{s:78:"/Applications/phpstudy/coyotehttpen/application/index/view/index/fm1mixer.html";i:1686189147;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -150,7 +150,7 @@
 					<div class="test_video text-right">
 						<div class="test_data_left">
 							<div class="test_video1 text-center">
-								<video class="edui-upload-video  vjs-default-skin video-js" controls="" preload="none" width="620" height="280" src="/kayoudi/img/test_data/test_data_01.mp4" data-setup="{}" poster="/kayoudi/img/test_data/test_data_05.jpeg"></video>
+								<video class="edui-upload-video  vjs-default-skin video-js video-bg" controls="" preload="none" width="1000" height="460" src="/kayoudi/img/test_data/test_data_02.mp4" data-setup="{}" poster="/kayoudi/img/test_data/test_data_05.jpeg"></video>
 							</div>
 						</div>
 					</div>
@@ -171,7 +171,7 @@
 					<div class="test_video text-right">
 						<div class="test_data_left">
 							<div class="test_video1 text-center">
-								<video class="edui-upload-video  vjs-default-skin video-js" controls="" preload="none" width="620" height="280" src="/kayoudi/img/test_data/test_data_02.mp4" data-setup="{}" poster="/kayoudi/img/test_data/test_data_05.jpeg"></video>
+								<video class="edui-upload-video  vjs-default-skin video-js video-bg" controls="" preload="none" width="1000" height="460" src="/kayoudi/img/test_data/test_data_01.mp4" data-setup="{}" poster="/kayoudi/img/test_data/test_data_05.jpeg"></video>
 							</div>
 						</div>
 					</div>
@@ -279,177 +279,179 @@
 							<h3>The red line in the figure represents QC.</h3> 
 						</div>
 					</div>
-					<div class="proInfo-list test_data_list">
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0011A/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:新冠</p>  -->
-									<p class="new_p">QC:0011A</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
+					<div class="test_data_div">
+						<div class="proInfo-list test_data_list">
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0011A/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:新冠</p>  -->
+										<p class="new_p">QC:0011A</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0011B/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0011B</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0011C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0011C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0011D/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0011D</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0021C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0021C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0021D/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0021D</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0171C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0171C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0171D/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0171D</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0181C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0181C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0181D/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0181D</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0221C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0221C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0231C/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0231C</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							<div class="new_proInfo-item margin-b30 test_data_color">
+								<a href="/kayoudi/img/test_data/0231D/Program.txt" download="Program">
+									<div class="new_proInfo-item-left">
+										<i></i>
+										<p>Download</p>
+									</div>
+									<div class="new_proInfo-item-right line3">
+										<!-- <p>名称:甲乙新</p>  -->
+										<p class="new_p">QC:0231D</p>
+										<p>Program.txt</p>
+									</div>
+								</a>
+							</div>
+							
 						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0011B/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0011B</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0011C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0011C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0011D/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0011D</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0021C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0021C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0021D/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0021D</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0171C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0171C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0171D/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0171D</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0181C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0181C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0181D/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0181D</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0221C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0221C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0231C/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0231C</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						<div class="proInfo-item margin-b30 test_data_color">
-							<a href="/kayoudi/img/test_data/0231D/Program.txt" download="Program">
-								<div class="proInfo-item-left">
-									<i></i>
-									<p>Download</p>
-								</div>
-								<div class="proInfo-item-right line3">
-									<!-- <p>名称:甲乙新</p>  -->
-									<p class="new_p">QC:0231D</p>
-									<p>Program.txt</p>
-								</div>
-							</a>
-						</div>
-						
 					</div>
 				</div>
 			</div>
