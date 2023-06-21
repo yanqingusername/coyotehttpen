@@ -84,7 +84,7 @@ img {
 
 i,
 em {
-	font-style: normal;
+	/* font-style: normal; */
 	text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ a:hover {
 	float: right;
 }
 
-em,
+/* em, */
 i,
 u {
 	font-style: normal;

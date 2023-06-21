@@ -1,4 +1,4 @@
-<?php /*a:2:{s:87:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_detail.html";i:1686909288;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229474;}*/ ?>
+<?php /*a:2:{s:87:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument_detail.html";i:1687333752;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -46,7 +46,7 @@
 							<div class="core">
 								<?php if(is_array($item['sub']) || $item['sub'] instanceof \think\Collection || $item['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $item['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub1): $mod = ($i % 2 );++$i;?>
 								<dl>
-									<dt><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
+									<dt class="new-dt"><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
 									<?php if($sub1['sub']): if(is_array($sub1['sub']) || $sub1['sub'] instanceof \think\Collection || $sub1['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $sub1['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub2): $mod = ($i % 2 );++$i;?>
 									<dd><a href="<?php echo url($sub1['sub_url'],['id'=>$sub2['id']]); ?>"><?php echo htmlentities($sub2['title']); ?></a></dd>
 									<?php endforeach; endif; else: echo "" ;endif; ?>
@@ -153,24 +153,23 @@
 
 			<style type="text/css">
 				table tr:nth-child(odd) {
-					/* font-size: 18px;
-					color: #1E254A; */
-					/* font-weight: 600; */
+					font-size: 18px;
+					color: #1E254A;
+					font-weight: 600;
 				}
 
 				table tr:nth-child(even) {
-					/* font-size: 18px;
-					color: #1E254A; */
-					/* color: rgba(30, 37, 74, 0.8); */
+					font-size: 18px;
+					color: #1E254A;
 				}
 
 				table td {
 					vertical-align: middle!important;
 				}
 
-				/* table tr:nth-child(even) td {
+				table tr:nth-child(even) td {
 					padding-bottom: 25px;
-				} */
+				}
 			</style>
 
 			<div class="insdel-box2-right">
