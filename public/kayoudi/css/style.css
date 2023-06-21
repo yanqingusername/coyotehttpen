@@ -8705,3 +8705,13 @@
 .new-dt{
 	font-size: 20px !important;
 }
+
+.new-insdel-box5-list{
+
+	width: 100%;
+
+	display: flex;
+
+	flex-wrap: wrap;
+
+}

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_detail.html";i:1687332287;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
+<?php /*a:2:{s:84:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_detail.html";i:1687336807;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -153,6 +153,9 @@
 			}
 			.reagent-detail-box2-info-cell.active{
 				display: block;
+			}
+			table td {
+				vertical-align: middle!important;
 			}
 		</style>
 		

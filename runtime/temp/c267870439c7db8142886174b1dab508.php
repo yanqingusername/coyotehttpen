@@ -1,4 +1,4 @@
-<?php /*a:2:{s:81:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_res.html";i:1687239072;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
+<?php /*a:2:{s:81:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_res.html";i:1687340459;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -106,7 +106,7 @@
 						<span><?php echo htmlentities($cate['picname']); ?></span>
 					</div>
 		
-					<div class="insdel-box5-list">
+					<div class="new-insdel-box5-list">
 						<?php if(is_array($reagentdata) || $reagentdata instanceof \think\Collection || $reagentdata instanceof \think\Paginator): $i = 0; $__LIST__ = $reagentdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
 						<div class="insdel-box5-item new-insdel-box5-item">
 							<a href="<?php echo url('reagent_detail',['id'=>$item['id']]); ?>">
