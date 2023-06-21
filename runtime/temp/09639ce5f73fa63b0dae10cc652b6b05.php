@@ -1,4 +1,4 @@
-<?php /*a:2:{s:77:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html";i:1677057907;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1677057907;}*/ ?>
+<?php /*a:2:{s:77:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html";i:1687238715;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -46,7 +46,7 @@
 							<div class="core">
 								<?php if(is_array($item['sub']) || $item['sub'] instanceof \think\Collection || $item['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $item['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub1): $mod = ($i % 2 );++$i;?>
 								<dl>
-									<dt><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
+									<dt class="new-dt"><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
 									<?php if($sub1['sub']): if(is_array($sub1['sub']) || $sub1['sub'] instanceof \think\Collection || $sub1['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $sub1['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub2): $mod = ($i % 2 );++$i;?>
 									<dd><a href="<?php echo url($sub1['sub_url'],['id'=>$sub2['id']]); ?>"><?php echo htmlentities($sub2['title']); ?></a></dd>
 									<?php endforeach; endif; else: echo "" ;endif; ?>
@@ -101,7 +101,25 @@
 		
 		<div class="reagent">
 			<div class="core">
-				<div class="reagent-section1 wow bounceInUp">
+				<div class="index1-text2">
+					<span><?php echo htmlentities($reagent['title']); ?></span>
+				</div>
+	
+				<div class="insdel-box5-list">
+					<?php if(is_array($reagentdata) || $reagentdata instanceof \think\Collection || $reagentdata instanceof \think\Paginator): $i = 0; $__LIST__ = $reagentdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+					<div class="insdel-box5-item new-insdel-box5-item">
+						<a href="<?php echo url('reagent_detail',['id'=>$item['id']]); ?>">
+							<div class="new-insdel-box5-img">
+								<img src="<?php echo htmlentities($item['thumb_path']); ?>" alt="">
+							</div>
+							<div class="new-reagent-proitem-p">
+								<?php echo htmlentities($item['title']); if($item['test_method']): ?>（<?php echo htmlentities($item['test_method']); ?>）<?php endif; ?>
+							</div>
+						</a>
+					</div>
+					<?php endforeach; endif; else: echo "" ;endif; ?>
+				</div>
+				<!-- <div class="reagent-section1 wow bounceInUp">
 					<div class="index1-text2">
 						<span><?php echo htmlentities($reagent['title']); ?></span>
 					</div>
@@ -153,7 +171,7 @@
 							el: ".reagent-section1-con .swiper-pagination",
 						}
 					});
-				</script>
+				</script> -->
 				
 				<div class="index1-item wow bounceInUp">
 					<div class="index1-img">

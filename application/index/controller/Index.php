@@ -426,4 +426,59 @@ class Index extends Common
 
         return view('fm1mixer'); 
     }
+
+    public function reagent_sex()
+    {
+        $cate = (new Category)->with(['image1'])->field('id,parentid,catname,image,picname,subpicname,setting,description')->where('id',60)->find();
+        $seo = unserialize($cate['setting']);
+        unset($cate['setting']);
+        $this->assign('seo',$seo);
+        $this->assign('cate',$cate);
+
+        $reagent = (new Reagent)->getInfo(); 
+
+        $reagentdata = (new Reagentclinical)->getlist(['catid'=>60]); 
+
+        // halt($reagentdata);
+        // halt($reagent);
+ 
+        return view('reagent_sex',compact('reagent','reagentdata'));
+    }
+
+    public function reagent_res()
+    {
+        $cate = (new Category)->with(['image1'])->field('id,parentid,catname,image,picname,subpicname,setting,description')->where('id',48)->find();
+        $seo = unserialize($cate['setting']);
+        unset($cate['setting']);
+        $this->assign('seo',$seo);
+        $this->assign('cate',$cate);
+
+        $reagent = (new Reagent)->getInfo(); 
+
+        $reagentdata = (new Reagentclinical)->getlist(['catid'=>48]); 
+
+        // halt($reagentdata);
+        // halt($reagent);
+ 
+        return view('reagent_res',compact('reagent','reagentdata'));
+    }
+
+    public function reagent_mos()
+    {
+        $cate = (new Category)->with(['image1'])->field('id,parentid,catname,image,picname,subpicname,setting,description')->where('id',61)->find();
+        $seo = unserialize($cate['setting']);
+        unset($cate['setting']);
+        $this->assign('seo',$seo);
+        $this->assign('cate',$cate);
+
+        $reagent = (new Reagent)->getInfo(); 
+
+        $reagentdata = (new Reagentclinical)->getlist(['catid'=>61]); 
+
+        // halt($reagentdata);
+        // halt($reagent);
+ 
+        return view('reagent_mos',compact('reagent','reagentdata'));
+    }
+    
 }

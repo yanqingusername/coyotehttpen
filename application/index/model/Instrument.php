@@ -83,7 +83,7 @@ class Instrument extends Model{
             }
 
             $data['recommend'] = (new static)->with('imageho')->where('id', 'in', $data['matchingreagent'])->where('status',1)->field('id,title,thumb')->select()->toarray();
-            $data['parts'] = (new Parts)->with('imageho')->where('id', 'in', $data['parts'])->field('id,title,thumb,content')->select();  
+            $data['parts'] = (new Parts)->with('imageho')->where('id', 'in', $data['parts'])->field('id,title,thumb,content')->order('listorder')->select();  
 
             $data['tags'] = $data['tags'] == ''?[]: explode('::', $data['tags']);
             $data['tags2'] = $data['tags2'] == ''?[]: explode('::', $data['tags2']);

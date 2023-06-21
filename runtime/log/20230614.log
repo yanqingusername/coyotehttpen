@@ -1,0 +1,2386 @@
+---------------------------------------------------------------
+
+[2023-06-14T15:51:42+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.033694s] [吞吐率：29.68req/s] [内存消耗：963.32kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729094.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/category/edit.html [ array (
+  0 => 'tp_category',
+  1 => 'tp_list',
+  2 => 'tp_show',
+  3 => 'tp_page',
+  4 => 'data',
+  5 => 'setting',
+  6 => 'category',
+  7 => 'models',
+  8 => 'privs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category_priv` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category_priv` WHERE  `catid` = 63 [ RunTime:0.000359s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:51:50+08:00] 127.0.0.1 POST 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.025145s] [吞吐率：39.77req/s] [内存消耗：973.38kb] [文件加载：175]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729094.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/edit.html?id=63',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://127.0.0.1:9090',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'content-length' => '445',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+  'parentid' => '47',
+  'catname' => 'Sexually Transmitted Infection',
+  'catdir' => 'SexuallyTransmittedInfection',
+  'url' => 'index/reagent',
+  'description' => '',
+  'picname' => '11111',
+  'subpicname' => '',
+  'image' => '0',
+  'imagem' => '0',
+  'status' => '1',
+  'bottom_status' => '1',
+  'listorder' => '100',
+  'setting' => 
+  array (
+    'meta_title' => '',
+    'meta_keywords' => '',
+    'meta_description' => '',
+    'category_template' => 'category.html',
+    'list_template' => 'list.html',
+    'show_template' => 'show.html',
+  ),
+  'template_child' => '0',
+  'modelid' => '24',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_category` WHERE  `catdir` = 'SexuallyTransmittedInfection'  AND `id` <> 63 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] UPDATE `yzn_category`  SET `parentid` = 47 , `catname` = 'Sexually Transmitted Infection' , `catdir` = 'SexuallyTransmittedInfection' , `url` = 'index/reagent' , `description` = '' , `picname` = '11111' , `subpicname` = '' , `image` = 0 , `imagem` = 0 , `status` = 1 , `bottom_status` = 1 , `listorder` = 100 , `setting` = 'a:6:{s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:17:\"category_template\";s:13:\"category.html\";s:13:\"list_template\";s:9:\"list.html\";s:13:\"show_template\";s:9:\"show.html\";}' , `modelid` = 24 , `type` = 2  WHERE  `id` = 63 [ RunTime:0.000701s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:修改成功！' , '/cms/category/edit.html?id=63' , '127.0.0.1' , 1686729110) [ RunTime:0.001117s ]
+[ error ] [8]未定义数组索引: web_site_baidupush[/Applications/phpstudy/coyotehttpen/application/cms/model/Category.php:31]
+---------------------------------------------------------------
+
+[2023-06-14T15:51:52+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/index.html?page=1&limit=10
+[运行时间：0.012728s] [吞吐率：78.57req/s] [内存消耗：964.82kb] [文件加载：169]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729094.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/index_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000992s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:51:53+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.026514s] [吞吐率：37.72req/s] [内存消耗：1,951.14kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729094.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/instrument_detail/id/3.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000461s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000343s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000386s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000341s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000423s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000350s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000472s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000310s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000437s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000494s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000333s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:51:55+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.026465s] [吞吐率：37.79req/s] [内存消耗：1,949.89kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729113.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/reagent.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000465s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000382s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000618s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000366s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000377s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000399s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000448s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000319s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000286s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000423s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000490s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.001401s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000268s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:51:58+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.023369s] [吞吐率：42.79req/s] [内存消耗：1,949.91kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729115.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/reagent.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000462s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000499s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000485s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000457s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000375s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000475s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000324s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000264s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000299s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000319s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000248s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:06+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.027482s] [吞吐率：36.39req/s] [内存消耗：1,949.81kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729118.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000477s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000437s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000345s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000270s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.001272s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000488s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000387s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000353s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000346s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000305s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000376s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:09+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.028494s] [吞吐率：35.10req/s] [内存消耗：1,949.87kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729126.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/reagent.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000543s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000895s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000488s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000430s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000431s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000353s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000344s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000444s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000361s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000410s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000347s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:12+08:00] 127.0.0.1 GET 127.0.0.1:9090/reagent.html
+[运行时间：0.023384s] [吞吐率：42.76req/s] [内存消耗：1,949.84kb] [文件加载：176]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index/index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729129.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/reagent.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/reagent_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/index/view/index/reagent.html [ array (
+  0 => 'mycompany',
+  1 => 'menu',
+  2 => 'bottom_menu',
+  3 => 'seo',
+  4 => 'cate',
+  5 => 'reagent',
+  6 => 'reagentdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url`,`child` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 0 ORDER BY `listorder` [ RunTime:0.000429s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 51 ORDER BY `listorder`,`id` [ RunTime:0.000364s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_instrument` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000343s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 47 ORDER BY `listorder`,`id` [ RunTime:0.000315s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000337s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000354s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 63 ORDER BY `listorder`,`id` [ RunTime:0.000370s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `id`,title as catname FROM `yzn_solution` WHERE  `status` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000332s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `status` = 1  AND `parentid` = 30 ORDER BY `listorder`,`id` [ RunTime:0.000311s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`address`,`mobile`,`email` FROM `yzn_mycompany` WHERE  `status` = 1 ORDER BY `id` [ RunTime:0.000324s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`catname`,`url` FROM `yzn_category` WHERE  `parentid` = 0  AND `bottom_status` = 1 ORDER BY `listorder` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `id`,`parentid`,`catname`,`image`,`picname`,`subpicname`,`setting`,`description` FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 699 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 579 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 817 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `status` = 1  AND `catid` = 48 ORDER BY `listorder`,`id` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` IN (856,585) [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` WHERE  `id` = 584 [ RunTime:0.000362s ]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:40]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:44]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+[ error ] [8]未定义数组索引: sub[/Applications/phpstudy/coyotehttpen/runtime/temp/09639ce5f73fa63b0dae10cc652b6b05.php:50]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:19+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.025175s] [吞吐率：39.72req/s] [内存消耗：964.24kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/category/edit.html [ array (
+  0 => 'tp_category',
+  1 => 'tp_list',
+  2 => 'tp_show',
+  3 => 'tp_page',
+  4 => 'data',
+  5 => 'setting',
+  6 => 'category',
+  7 => 'models',
+  8 => 'privs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category_priv` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category_priv` WHERE  `catid` = 63 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:29+08:00] 127.0.0.1 POST 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.014071s] [吞吐率：71.07req/s] [内存消耗：973.35kb] [文件加载：175]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/edit.html?id=63',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://127.0.0.1:9090',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'content-length' => '440',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+  'parentid' => '47',
+  'catname' => 'Sexually Transmitted Infection',
+  'catdir' => 'SexuallyTransmittedInfection',
+  'url' => 'index/reagent',
+  'description' => '',
+  'picname' => '',
+  'subpicname' => '',
+  'image' => '0',
+  'imagem' => '0',
+  'status' => '1',
+  'bottom_status' => '1',
+  'listorder' => '100',
+  'setting' => 
+  array (
+    'meta_title' => '',
+    'meta_keywords' => '',
+    'meta_description' => '',
+    'category_template' => 'category.html',
+    'list_template' => 'list.html',
+    'show_template' => 'show.html',
+  ),
+  'template_child' => '0',
+  'modelid' => '24',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_category` WHERE  `catdir` = 'SexuallyTransmittedInfection'  AND `id` <> 63 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] UPDATE `yzn_category`  SET `parentid` = 47 , `catname` = 'Sexually Transmitted Infection' , `catdir` = 'SexuallyTransmittedInfection' , `url` = 'index/reagent' , `description` = '' , `picname` = '' , `subpicname` = '' , `image` = 0 , `imagem` = 0 , `status` = 1 , `bottom_status` = 1 , `listorder` = 100 , `setting` = 'a:6:{s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:17:\"category_template\";s:13:\"category.html\";s:13:\"list_template\";s:9:\"list.html\";s:13:\"show_template\";s:9:\"show.html\";}' , `modelid` = 24 , `type` = 2  WHERE  `id` = 63 [ RunTime:0.000420s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:修改成功！' , '/cms/category/edit.html?id=63' , '127.0.0.1' , 1686729149) [ RunTime:0.000327s ]
+[ error ] [8]未定义数组索引: web_site_baidupush[/Applications/phpstudy/coyotehttpen/application/cms/model/Category.php:31]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:31+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/index.html?page=1&limit=10
+[运行时间：0.010610s] [吞吐率：94.25req/s] [内存消耗：964.82kb] [文件加载：169]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/index_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000615s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:39+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/49.html
+[运行时间：0.018144s] [吞吐率：55.11req/s] [内存消耗：1,047.18kb] [文件加载：175]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/49_html' => '',
+  'catid' => '49',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 701 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000415s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:39+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/49.html?page=1&limit=10
+[运行时间：0.017077s] [吞吐率：58.56req/s] [内存消耗：932.09kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/49.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/49_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '49',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 49  AND `status` <> -1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 49  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 814 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 813 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 812 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 811 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 810 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:49+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/48.html
+[运行时间：0.020788s] [吞吐率：48.10req/s] [内存消耗：1,048.43kb] [文件加载：175]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/48_html' => '',
+  'catid' => '48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 700 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000454s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:49+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/48.html?page=1&limit=10
+[运行时间：0.014512s] [吞吐率：68.91req/s] [内存消耗：961.98kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/48.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/48_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '48',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 48  AND `status` <> -1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 48  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 856 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 856 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 585 LIMIT 1 [ RunTime:0.000244s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:54+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/add/catid/47.html
+[运行时间：0.022467s] [吞吐率：44.51req/s] [内存消耗：1,071.84kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/add/catid/47_html' => '',
+  'catid' => '47',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/add.html [ array (
+  0 => 'catid',
+  1 => 'fieldList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000509s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 699 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW TABLES LIKE 'yzn_reagent' [ RunTime:0.001613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `catid` = 47 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`remark`,`type`,`isadd`,`iscore`,`ifsystem`,`ifrequire`,`setting` FROM `yzn_model_field` WHERE  `modelid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `tablename`,`type` FROM `yzn_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000397s ]
+[ error ] [8]未定义数组索引: menusource[/Applications/phpstudy/coyotehttpen/runtime/temp/138f98a8b47e4251487e97757a4cbae5.php:110]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:55+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/add/catid/47.html
+[运行时间：0.016945s] [吞吐率：59.01req/s] [内存消耗：968.27kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/add/catid/47_html' => '',
+  'catid' => '47',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/add.html [ array (
+  0 => 'catid',
+  1 => 'fieldList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW TABLES LIKE 'yzn_reagent' [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `catid` = 47 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`remark`,`type`,`isadd`,`iscore`,`ifsystem`,`ifrequire`,`setting` FROM `yzn_model_field` WHERE  `modelid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT `tablename`,`type` FROM `yzn_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000378s ]
+[ error ] [8]未定义数组索引: menusource[/Applications/phpstudy/coyotehttpen/runtime/temp/138f98a8b47e4251487e97757a4cbae5.php:110]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:57+08:00] 127.0.0.1 GET 127.0.0.1:9090/admin/index/index.html
+[运行时间：0.057242s] [吞吐率：17.47req/s] [内存消耗：960.52kb] [文件加载：173]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/admin/view/index/index.html [ array (
+  0 => 'userInfo',
+  1 => 'SUBMENU_CONFIG',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 0  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 55  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 75  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 76  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 77  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 84  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 32  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 33  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 37  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 3  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 10  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 11  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 27  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 24  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 25  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 26  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 13  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 14  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 28  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 29  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 30  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 31  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 15  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 16  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 18  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 19  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 21  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 17  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 22  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 48  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 49  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 50  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 51  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 20  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 12  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000330s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:57+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/index/menuid/57.html
+[运行时间：0.009710s] [吞吐率：102.99req/s] [内存消耗：897.03kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/index/menuid/57_html' => '',
+  'menuid' => '57',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000519s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:57+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/public_categorys.html
+[运行时间：0.010074s] [吞吐率：99.27req/s] [内存消耗：965.25kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/public_categorys_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/public_categorys.html [ array (
+  0 => 'json',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000848s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:57+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/panl.html
+[运行时间：0.051614s] [吞吐率：19.37req/s] [内存消耗：1,030.55kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/panl_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/panl.html [ array (
+  0 => 'info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_category` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model` WHERE  `module` = 'cms' [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_tags` [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_tags` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_index` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_information` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_solution` [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joinus` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joinus` [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mycompany` [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_cooperation` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_about` [ RunTime:0.001713s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_about` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_aboutdata` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_aboutdata` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_vanguard` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_vanguard` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_development` [ RunTime:0.002592s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_development` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technology` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technology` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technologydata` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technologydata` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joindata` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joindata` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_position` [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_position` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_positioncate` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_positioncate` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.001553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagent` [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_instrument` [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_parts` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_parts` [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mobilelab` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mobilelab` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_contact` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_contact` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_country` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_country` [ RunTime:0.000257s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:58+08:00] 127.0.0.1 GET 127.0.0.1:9090/admin/index/index.html
+[运行时间：0.012128s] [吞吐率：82.45req/s] [内存消耗：931.38kb] [文件加载：173]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/admin/view/index/index.html [ array (
+  0 => 'userInfo',
+  1 => 'SUBMENU_CONFIG',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:58+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/index/menuid/57.html
+[运行时间：0.007366s] [吞吐率：135.76req/s] [内存消耗：897.03kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/index/menuid/57_html' => '',
+  'menuid' => '57',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000377s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:58+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/public_categorys.html
+[运行时间：0.011892s] [吞吐率：84.09req/s] [内存消耗：965.25kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/public_categorys_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/public_categorys.html [ array (
+  0 => 'json',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000657s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:58+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/panl.html
+[运行时间：0.050886s] [吞吐率：19.65req/s] [内存消耗：1,031.48kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/panl_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/panl.html [ array (
+  0 => 'info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_category` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model` WHERE  `module` = 'cms' [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_tags` [ RunTime:0.002578s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_tags` [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_index` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_information` [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_solution` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joinus` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joinus` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mycompany` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_cooperation` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_about` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_about` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_aboutdata` [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_aboutdata` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_vanguard` [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_vanguard` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_development` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_development` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technology` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technology` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technologydata` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technologydata` [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joindata` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joindata` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_position` [ RunTime:0.001723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_position` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_positioncate` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_positioncate` [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagent` [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_instrument` [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_parts` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_parts` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mobilelab` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mobilelab` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_contact` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_contact` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_country` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_country` [ RunTime:0.000337s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:59+08:00] 127.0.0.1 GET 127.0.0.1:9090/admin/index/index.html
+[运行时间：0.011993s] [吞吐率：83.38req/s] [内存消耗：931.39kb] [文件加载：173]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/admin/view/index/index.html [ array (
+  0 => 'userInfo',
+  1 => 'SUBMENU_CONFIG',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:59+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/index/menuid/57.html
+[运行时间：0.007260s] [吞吐率：137.74req/s] [内存消耗：897.03kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/index/menuid/57_html' => '',
+  'menuid' => '57',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:59+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/public_categorys.html
+[运行时间：0.011042s] [吞吐率：90.56req/s] [内存消耗：965.25kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/public_categorys_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/public_categorys.html [ array (
+  0 => 'json',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000672s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:52:59+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/panl.html
+[运行时间：0.046163s] [吞吐率：21.66req/s] [内存消耗：1,030.55kb] [文件加载：170]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/index/menuid/57.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/panl_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/panl.html [ array (
+  0 => 'info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_category` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model` WHERE  `module` = 'cms' [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_tags` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_tags` [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_index` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_index` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_information` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_information` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_solution` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_solution` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joinus` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joinus` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mycompany` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mycompany` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_cooperation` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_cooperation` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_about` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_about` [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_aboutdata` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_aboutdata` [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_vanguard` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_vanguard` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_development` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_development` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technology` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technology` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_technologydata` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_technologydata` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_joindata` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_joindata` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_position` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_position` [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_positioncate` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_positioncate` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagent` [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_instrument` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_instrument` [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_parts` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_parts` [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_mobilelab` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_mobilelab` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_contact` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_contact` [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_country` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_country` [ RunTime:0.000314s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:02+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html
+[运行时间：0.010345s] [吞吐率：96.67req/s] [内存消耗：932.22kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000428s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:02+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html?page=1&limit=10
+[运行时间：0.008454s] [吞吐率：118.29req/s] [内存消耗：839.63kb] [文件加载：167]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/63.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:07+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html
+[运行时间：0.010421s] [吞吐率：95.96req/s] [内存消耗：932.20kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000379s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:08+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html?page=1&limit=10
+[运行时间：0.008311s] [吞吐率：120.32req/s] [内存消耗：839.61kb] [文件加载：167]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/63.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:08+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html
+[运行时间：0.010487s] [吞吐率：95.36req/s] [内存消耗：932.23kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000444s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:08+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html?page=1&limit=10
+[运行时间：0.008796s] [吞吐率：113.69req/s] [内存消耗：839.61kb] [文件加载：167]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/63.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:53:09+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/add/catid/47.html
+[运行时间：0.019781s] [吞吐率：50.55req/s] [内存消耗：969.36kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/add/catid/47_html' => '',
+  'catid' => '47',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/add.html [ array (
+  0 => 'catid',
+  1 => 'fieldList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW TABLES LIKE 'yzn_reagent' [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagent` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `catid` = 47 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`remark`,`type`,`isadd`,`iscore`,`ifsystem`,`ifrequire`,`setting` FROM `yzn_model_field` WHERE  `modelid` = 23  AND `status` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT `tablename`,`type` FROM `yzn_model` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagent` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 579 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `yzn_attachment` WHERE  `id` = 817 LIMIT 1 [ RunTime:0.000252s ]
+[ error ] [8]未定义数组索引: menusource[/Applications/phpstudy/coyotehttpen/runtime/temp/138f98a8b47e4251487e97757a4cbae5.php:110]
+---------------------------------------------------------------
+
+[2023-06-14T15:55:04+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html
+[运行时间：0.013792s] [吞吐率：72.51req/s] [内存消耗：932.23kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/public_categorys.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/cms/classlist.html [ array (
+  0 => 'string',
+  1 => 'catid',
+  2 => 'fielddata',
+  3 => 'has_thumb',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_model_field` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_model_field` WHERE  `modelid` = 24  AND `liststatus` = 1 ORDER BY `listorder`,`id` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_model_field` WHERE  `modelid` = 24  AND `status` = 1  AND `name` = 'thumb' [ RunTime:0.000396s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:55:05+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/cms/classlist/catid/63.html?page=1&limit=10
+[运行时间：0.008128s] [吞吐率：123.03req/s] [内存消耗：839.59kb] [文件加载：167]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/cms/classlist/catid/63.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/cms/classlist/catid/63_html' => '',
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_reagentclinical` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_reagentclinical` WHERE  `catid` = 63  AND `status` <> -1 ORDER BY `listorder`,`id` DESC LIMIT 0,10 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:55:09+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/index/menuid/77.html
+[运行时间：0.008035s] [吞吐率：124.46req/s] [内存消耗：821.42kb] [文件加载：169]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/index/menuid/77_html' => '',
+  'menuid' => '77',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/category/index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:55:09+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/index.html?page=1&limit=10
+[运行时间：0.010719s] [吞吐率：93.29req/s] [内存消耗：964.82kb] [文件加载：169]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/index_html' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder`,`id` ASC [ RunTime:0.000684s ]
+---------------------------------------------------------------
+
+[2023-06-14T15:55:13+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.011933s] [吞吐率：83.80req/s] [内存消耗：964.24kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/category/edit.html [ array (
+  0 => 'tp_category',
+  1 => 'tp_list',
+  2 => 'tp_show',
+  3 => 'tp_page',
+  4 => 'data',
+  5 => 'setting',
+  6 => 'category',
+  7 => 'models',
+  8 => 'privs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category_priv` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category_priv` WHERE  `catid` = 63 [ RunTime:0.000356s ]
+---------------------------------------------------------------
+
+[2023-06-14T16:02:48+08:00] 127.0.0.1 GET 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.014390s] [吞吐率：69.49req/s] [内存消耗：964.24kb] [文件加载：174]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/index/menuid/77.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"macOS"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/phpstudy/coyotehttpen/application/cms/view/category/edit.html [ array (
+  0 => 'tp_category',
+  1 => 'tp_list',
+  2 => 'tp_show',
+  3 => 'tp_page',
+  4 => 'data',
+  5 => 'setting',
+  6 => 'category',
+  7 => 'models',
+  8 => 'privs',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000528s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category_priv` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category_priv` WHERE  `catid` = 63 [ RunTime:0.000322s ]
+---------------------------------------------------------------
+
+[2023-06-14T16:02:57+08:00] 127.0.0.1 POST 127.0.0.1:9090/cms/category/edit.html?id=63
+[运行时间：0.035092s] [吞吐率：28.50req/s] [内存消耗：868.88kb] [文件加载：181]
+[ info ] [ LANG ] /Applications/phpstudy/coyotehttpen/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.228285100.1677060204; PHPSESSID=6pnjh7bifabh0ug0lrivlplnd7; _ga_J1DGRNCQ6S=GS1.1.1686722514.28.1.1686729132.0.0.0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9090/cms/category/edit.html?id=63',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://127.0.0.1:9090',
+  'sec-ch-ua-platform' => '"macOS"',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
+  'content-length' => '413',
+  'connection' => 'close',
+  'host' => '127.0.0.1:9090',
+)
+[ info ] [ PARAM ] array (
+  '/cms/category/edit_html' => '',
+  'id' => '63',
+  'parentid' => '47',
+  'catname' => 'Sexually Transmitted Infections',
+  'catdir' => '',
+  'url' => 'index/reagent',
+  'description' => '',
+  'picname' => '',
+  'subpicname' => '',
+  'image' => '0',
+  'imagem' => '0',
+  'status' => '1',
+  'bottom_status' => '1',
+  'listorder' => '100',
+  'setting' => 
+  array (
+    'meta_title' => '',
+    'meta_keywords' => '',
+    'meta_description' => '',
+    'category_template' => 'category.html',
+    'list_template' => 'list.html',
+    'show_template' => 'show.html',
+  ),
+  'template_child' => '0',
+  'modelid' => '24',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;dbname=kyden_web_zhongw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_category` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_category` WHERE  `catdir` = 'SexuallyTransmittedInfections'  AND `id` <> 63 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_category` WHERE  `id` = 63 LIMIT 1 [ RunTime:0.000330s ]
+[ error ] [10501]SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'catname' at row 1[/Applications/phpstudy/coyotehttpen/thinkphp/library/think/db/Connection.php:764]

@@ -62,19 +62,24 @@
 
 			<style type="text/css">
 				table tr:nth-child(odd) {
-					font-size: 18px;
-					color: #1E254A;
-					font-weight: 600
+					/* font-size: 18px;
+					color: #1E254A; */
+					/* font-weight: 600; */
 				}
 
 				table tr:nth-child(even) {
-					font-size: 18px;
-					color: rgba(30, 37, 74, 0.8);
+					/* font-size: 18px;
+					color: #1E254A; */
+					/* color: rgba(30, 37, 74, 0.8); */
 				}
 
-				table tr:nth-child(even) td {
-					padding-bottom: 25px;
+				table td {
+					vertical-align: middle!important;
 				}
+
+				/* table tr:nth-child(even) td {
+					padding-bottom: 25px;
+				} */
 			</style>
 
 			<div class="insdel-box2-right">
@@ -250,14 +255,15 @@
 		var len2 = $("#section2").offset().top
 		var len3 = $("#section3").offset().top
 		var len4 = $("#section4").offset().top
-		var len5 = $("#section5").offset().top
+		// var len5 = $("#section5").offset().top
 
 		var scroH = 0; //滚动高度
 		$(document).scroll(function() {
 			scroH = $(document).scrollTop(); //滚动高度
-			if (scroH >= len5) {
-				$(".insdel-tab ul li").eq(4).stop().addClass("active").siblings().stop().removeClass("active")
-			} else if (scroH >= len4) {
+			// if (scroH >= len5) {
+			// 	$(".insdel-tab ul li").eq(4).stop().addClass("active").siblings().stop().removeClass("active")
+			// } else
+			 if (scroH >= len4) {
 				$(".insdel-tab ul li").eq(3).stop().addClass("active").siblings().stop().removeClass("active")
 			} else if (scroH >= len3) {
 				$(".insdel-tab ul li").eq(2).stop().addClass("active").siblings().stop().removeClass("active")

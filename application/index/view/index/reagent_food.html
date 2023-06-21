@@ -27,6 +27,25 @@
 			<div class="core">
 
 				<div class="index1-text2">
+					<span>{$cate.picname}</span>
+				</div>
+	
+				<div class="insdel-box5-list">
+					{volist name="reagentdata" id="item"}
+					<div class="insdel-box5-item new-insdel-box5-item">
+						<a href="{:url('reagent_detail',['id'=>$item['id']])}">
+							<div class="new-insdel-box5-img">
+								<img src="{$item.thumb_path}" alt="">
+							</div>
+							<div class="new-reagent-proitem-p">
+								{$item.title}{if $item['test_method']}（{$item['test_method']}）{/if}
+							</div>
+						</a>
+					</div>
+					{/volist}
+				</div>
+
+				<!-- <div class="index1-text2">
 
 					<span>{$cate.picname}</span>
 
@@ -76,7 +95,7 @@
 
 					<a class="page-next" href="{:$reagentdata->url( $page<$reagentdata->lastPage()?$page+1:$reagentdata->lastPage() )}"></a>
 
-				</div>
+				</div> -->
 
 			</div>
 

@@ -45,7 +45,7 @@
 							<div class="core">
 								{volist name="item.sub" id="sub1"}
 								<dl>
-									<dt><a href="{:url($sub1['url'])}">{$sub1.catname}</a></dt>
+									<dt class="new-dt"><a href="{:url($sub1['url'])}">{$sub1.catname}</a></dt>
 									{if $sub1['sub']}
 									{volist name="sub1.sub" id="sub2"}
 									<dd><a href="{:url($sub1['sub_url'],['id'=>$sub2['id']])}">{$sub2.title}</a></dd>

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:80:"/Applications/phpstudy/coyotehttpen/application/index/view/index/instrument.html";i:1677057907;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229474;}*/ ?>
+<?php /*a:2:{s:81:"/Applications/phpstudy/coyotehttpen/application/index/view/index/reagent_sex.html";i:1687326936;s:70:"/Applications/phpstudy/coyotehttpen/application/index/view/layout.html";i:1687229775;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -46,7 +46,7 @@
 							<div class="core">
 								<?php if(is_array($item['sub']) || $item['sub'] instanceof \think\Collection || $item['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $item['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub1): $mod = ($i % 2 );++$i;?>
 								<dl>
-									<dt><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
+									<dt class="new-dt"><a href="<?php echo url($sub1['url']); ?>"><?php echo htmlentities($sub1['catname']); ?></a></dt>
 									<?php if($sub1['sub']): if(is_array($sub1['sub']) || $sub1['sub'] instanceof \think\Collection || $sub1['sub'] instanceof \think\Paginator): $i = 0; $__LIST__ = $sub1['sub'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub2): $mod = ($i % 2 );++$i;?>
 									<dd><a href="<?php echo url($sub1['sub_url'],['id'=>$sub2['id']]); ?>"><?php echo htmlentities($sub2['title']); ?></a></dd>
 									<?php endforeach; endif; else: echo "" ;endif; ?>
@@ -90,41 +90,122 @@
 		<!-- 内页头部 结束 -->
 
 		
-		<div class="ny-banner color-495877 instrument-banner" style="background-image: url(<?php echo htmlentities($cate['imagepath']); ?>);">
+		<div class="ny-banner color-495877 reagent-banner" style="background-image: url(<?php echo htmlentities($cate['imagepath']); ?>);">
 			<div class="core">
 				<h3 class="font46 font-bold line-height-1em"><?php echo htmlentities($cate['picname']); ?></h3>
-				
 				<div class="ny-banner-text">
 					<?php echo $cate['description']; ?>
 				</div>
 			</div>
 		</div>
 		
-		<div class="instrument-list">
+		<div class="reagent">
 			<div class="core">
-				<div class="tit">
-					<div class="tit-cn">Product List</div>
-				</div>
-				
-				<div class="instrument-list-con">
-					<?php if(is_array($instrument) || $instrument instanceof \think\Collection || $instrument instanceof \think\Paginator): $i = 0; $__LIST__ = $instrument;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
-					<div class="instrument-item">
-						<div class="instrument-item-img">
-							<img src="<?php echo htmlentities($item['thumb_path']); ?>" alt="">
-						</div>
-						<div class="instrument-item-text">
-							<h3><?php echo htmlentities($item['title']); ?></h3>
-							<p><?php echo $item['content']; ?></p>
-							<a class="index-more" href="<?php echo url('index/instrument_detail',['id'=>$item['id']]); ?>">
-								<span>DETAILS</span><em></em>
+					<div class="index1-text2">
+						<!-- <span><?php echo htmlentities($reagent['title']); ?></span> -->
+						<span><?php echo htmlentities($cate['picname']); ?></span>
+					</div>
+		
+					<div class="insdel-box5-list">
+						<?php if(is_array($reagentdata) || $reagentdata instanceof \think\Collection || $reagentdata instanceof \think\Paginator): $i = 0; $__LIST__ = $reagentdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+						<div class="insdel-box5-item new-insdel-box5-item">
+							<a href="<?php echo url('reagent_detail',['id'=>$item['id']]); ?>">
+								<div class="new-insdel-box5-img">
+									<img src="<?php echo htmlentities($item['thumb_path']); ?>" alt="">
+								</div>
+								<div class="new-reagent-proitem-p">
+									<?php echo htmlentities($item['title']); if($item['test_method']): ?>（<?php echo htmlentities($item['test_method']); ?>）<?php endif; ?>
+								</div>
 							</a>
 						</div>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
-					<?php endforeach; endif; else: echo "" ;endif; ?>
+				<!-- <div class="reagent-section1 wow bounceInUp">
+					<div class="index1-text2">
+						<span><?php echo htmlentities($reagent['title']); ?></span>
+					</div>
+					<div class="reagent-section1-con">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<?php if(is_array($reagentdata) || $reagentdata instanceof \think\Collection || $reagentdata instanceof \think\Paginator): $i = 0; $__LIST__ = $reagentdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+								<div class="swiper-slide">
+									<div class="reagent-proitem">
+										<a href="<?php echo url('reagent_detail',['id'=>$item['id']]); ?>">
+											<div class="reagent-proitem-img">
+												<img src="<?php echo htmlentities($item['design_path']); ?>" alt="">
+											</div>
+											<div class="reagent-proitem-kit">
+												<img src="<?php echo htmlentities($item['thumb_path']); ?>" alt="">
+											</div>
+											<div class="reagent-proitem-p">
+												<?php echo htmlentities($item['title']); if($item['test_method']): ?>（<?php echo htmlentities($item['test_method']); ?>）<?php endif; ?>
+											</div>
+										</a>
+									</div>
+								</div>
+								<?php endforeach; endif; else: echo "" ;endif; ?>
+							</div>
+						</div>
+						
+						<div class="swiper-pagination"></div>
+						
+						<div class="swiper-prev"></div>
+						<div class="swiper-next"></div>
+					</div>
 				</div>
+				<script>
+					var swiper = new Swiper('.reagent-section1-con .swiper-container', {
+						slidesPerView: 4,
+						spaceBetween: 20,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						// autoplay: {
+						// 	delay: 3000,
+						// 	disableOnInteraction: false,
+						// },
+						navigation: {
+							nextEl: ".reagent-section1-con .swiper-next",
+							prevEl: ".reagent-section1-con .swiper-prev",
+						},
+						pagination: {
+							el: ".reagent-section1-con .swiper-pagination",
+						}
+					});
+				</script> -->
+				
+				<!-- <div class="index1-item wow bounceInUp">
+					<div class="index1-img">
+						<img src="<?php echo htmlentities($reagent['image_path2']); ?>" alt="">
+					</div>
+					
+					<div class="index1-text">
+						<h3><?php echo htmlentities($reagent['title2']); ?></h3>
+						<div class="index1-p">
+							<?php echo htmlentities($reagent['content2']); ?>
+						</div>
+						
+						<a class="index-more" href="<?php echo url('reagent_research'); ?>"><span>DETAILS</span><em></em></a>
+					</div>
+				</div>
+				
+				
+				<div class="index1-item wow bounceInUp">
+					<div class="index1-text">
+						<h3><?php echo htmlentities($reagent['title3']); ?></h3>
+						<div class="index1-p">
+							<?php echo htmlentities($reagent['content3']); ?>
+						</div>
+						
+						<a class="index-more" href="<?php echo url('reagent_food'); ?>"><span>DETAILS</span><em></em></a>
+					</div>
+					<div class="index1-img">
+						<img src="<?php echo htmlentities($reagent['image_path3']); ?>" alt="">
+					</div>
+				</div> -->
 			</div>
 		</div>
-
+	 
 
 		<div class="footer padding-t115">
 			<div class="core">
